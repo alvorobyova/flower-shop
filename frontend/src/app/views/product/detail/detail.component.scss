@@ -1,0 +1,115 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+
+.detail {
+
+  padding: 101px 0 110px;
+
+  .container {
+    .detail-title {
+      @include head-lora-36;
+
+    }
+
+    .detail-product {
+      @include flex-justify_between;
+      margin: 30px 0 120px;
+
+      .detail-image {
+        width: 528px;
+        height: 528px;
+        @include bg-pos-size;
+        border-radius: 10px;
+      }
+
+      .detail-info {
+        width: 602px;
+
+        .detail-info-items {
+          margin-bottom: 51px;
+
+          .detail-info-item {
+            padding: 20px 0;
+            display: flex;
+
+            &:nth-child(2) {
+              border-top: 1px solid $light-green-color;
+              border-bottom: 1px solid $light-green-color;
+            }
+
+            &:first-child {
+              padding-top: 0;
+            }
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+
+            .detail-info-item-text {
+              margin-left: 22px;
+              width: 528px;
+
+              .detail-info-item-title {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 15px;
+              }
+
+              .detail-info-item-description {
+                color: $gray-text-color;
+              }
+            }
+          }
+        }
+
+        .detail-info-param {
+          @include flex-align_center;
+          font-size: 16px;
+          margin-top:12px;
+
+          .detail-info-param-name {
+            font-weight: 500;
+            margin-right: 10px;
+          }
+        }
+        .detail-info-params {
+          @include flex-center-between;
+          .detail-info-params-count {
+            @include flex-align_center;
+
+            span {
+              font-weight: 500;
+              font-size: 16px;
+              margin-right: 20px;
+            }
+          }
+
+          .detail-info-params-price {
+            font-weight: 700;
+            color: #313131;
+            font-size: 40px;
+          }
+        }
+
+        .detail-info-actions {
+          @include flex-align_center;
+          margin-top: 22px;
+
+          .button {
+            width: 290px;
+
+            &.button-transparent {
+              width: 307px;
+              margin-right: 10px;
+
+            }
+          }
+
+        }
+      }
+    }
+
+    .recommended-products {}
+  }
+}

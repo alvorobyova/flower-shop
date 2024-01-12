@@ -1,0 +1,86 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/data-form";
+
+.order {
+  padding: 86px 0 107px;
+
+  .container {
+    .order-title {
+      @include head-lora-32;
+      margin-bottom: 30px;
+    }
+
+    .order-info {
+      @include flex-justify_between;
+
+      .order-details {
+        width: 422px;
+
+        .order-details-info {
+          padding: 40px;
+          border-radius: 5px;
+          background: $light-green-color;
+          margin-bottom: 14px;
+
+          .order-details-info-title {
+            color: $green-text-color;
+            font-family: 'Lora', serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 20px;
+          }
+
+          .order-details-info-item {
+            @include flex-align_center;
+            color: $gray-text-color;
+            margin-bottom: 10px;
+
+            &:last-child {
+              margin-bottom: 0;
+              font-weight: 600;
+            }
+
+            .order-details-info-item-data {
+              font-size: 20px;
+              font-weight: 500;
+              margin-left: 12px;
+            }
+
+
+          }
+        }
+
+        .button {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
+
+.order-popup {
+  padding: 100px 70px 219px;
+  position: relative;
+  text-align: center;
+  color: $green-text-color;
+  background: url("../../../../assets/images/page/order-popup.png") no-repeat bottom center;
+
+  .order-popup-close {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+  }
+
+  .order-popup-title {
+    @include head-lora-32;
+    margin-bottom: 40px;
+  }
+
+  .order-popup-content div {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}

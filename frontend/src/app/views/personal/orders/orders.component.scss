@@ -1,0 +1,91 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/personal";
+
+
+.orders {
+
+  padding: 50px 0 156px;
+
+  .container {
+
+    .orders-title {
+      font-weight: 500;
+      margin-bottom: 14px;
+
+    }
+
+    .orders-title-additional {
+      margin-bottom: 67px;
+    }
+
+    .orders-empty {
+      margin: 40px 0 100px;
+
+      div {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+      }
+      .button {
+        width: 255px;
+        margin-top: 30px;
+      }
+    }
+
+    .orders-list {
+      .orders-list-item {
+        border-bottom: 1px solid $light-green-color;
+        padding-bottom: 46px;
+        margin-bottom: 47px;
+
+        &:last-child {
+          border-bottom: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+
+        @include flex-justify_between;
+        align-items: baseline;
+
+        .orders-list-item-number {
+          color: #111;
+          font-size: 20px;
+          text-decoration-line: underline;
+          width: 297px;
+        }
+
+        .orders-list-item-products {
+          color: #ADADAD;
+          width: 509px;
+
+          .orders-list-item-products-count {
+            margin-bottom: 12px;
+          }
+
+          .orders-list-item-products-list tr td:first-child {
+            padding: 0 20px 0 10px
+          }
+        }
+
+        .orders-list-item-status {
+          width: 125px;
+          padding: 8px 14px;
+          border-radius: 50px;
+          border: 1px solid #456F49;
+          background: transparent;
+          box-sizing: border-box;
+          color: #456F49;
+          text-align: center;
+        }
+
+        .orders-list-item-price {
+          width: 186px;
+          font-size: 22px;
+          font-weight: 600;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

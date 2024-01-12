@@ -1,0 +1,11 @@
+@import '../../../../assets/styles/mixins';
+
+.count-selector {
+  @include flex-center-between;
+  width: 97px;
+  div {
+    @include flex-center-center;
+    cursor: pointer;
+  }
+
+}

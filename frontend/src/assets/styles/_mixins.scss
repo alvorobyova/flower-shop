@@ -1,0 +1,46 @@
+@import "variables";
+
+@mixin head-lora-32 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: $green-text-color;
+}
+
+@mixin head-lora-36 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-align_center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-justify_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin bg-pos-size {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin common-border-radius {
+  border-radius: 5px;
+}

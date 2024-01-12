@@ -1,0 +1,134 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixins";
+
+.cart {
+  padding: 50px 0 110px;
+
+  .container {
+
+    .cart-title {
+      @include head-lora-36;
+    }
+
+    .cart-empty {
+      margin: 40px 0 100px;
+
+      div {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+      }
+      .button {
+        width: 255px;
+        margin-top: 30px;
+      }
+    }
+
+    .cart-info {
+      @include flex-justify_between;
+      margin: 35px 0 160px;
+
+      .cart-products {
+        width: 678px;
+
+        .cart-product {
+          @include flex-center-between;
+          padding: 20px 0;
+          border-bottom: 1px solid #EBEBEB;
+
+          &:last-child {
+            padding-bottom: 0;
+            border-bottom-color: transparent;
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          .cart-product-image {
+            @include bg-pos-size;
+            width: 80px;
+            height: 80px;
+            //margin-right: 26px;
+            @include common-border-radius;
+          }
+
+          .cart-product-name {
+            color: #000;
+            line-height: 130%;
+            width: 247px;
+          }
+
+          .cart-product-price {
+            color: $gray-text-color;
+            font-size: 18px;
+            font-weight: 600;
+            width: 100px;
+          }
+
+          .cart-product-remove {
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .cart-details {
+        width: 501px;
+
+        .cart-details-info {
+          padding: 40px;
+          border-radius: 5px;
+          background: $light-green-color;
+          margin-bottom: 12px;
+
+          .cart-details-info-title {
+            color: $green-text-color;
+            font-family: 'Lora', serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 20px;
+          }
+
+          .cart-details-info-item {
+            @include flex-align_center;
+            color: $gray-text-color;
+
+            .cart-details-info-item-data {
+              font-size: 20px;
+              font-weight: 500;
+              margin-left: 12px;
+            }
+
+            &.first {
+              margin-bottom: 10px;
+            }
+          }
+
+          .cart-details-info-delivery {
+            margin-top: 5px;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 14px;
+          }
+        }
+
+        .cart-details-actions {
+          @include flex-center-between;
+
+          .button {
+            width: 234px;
+
+            &.button-transparent {
+              width: 255px;
+              padding: 15px 30px;
+              //margin-right: 12px;
+              color: #6CAC72;
+            }
+          }
+        }
+      }
+    }
+  }
+}
