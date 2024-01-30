@@ -1,2 +1,2 @@
-Запуск backend -> `npm start`<br>
-Запуск  приложения ->`ng serve --o`
+run backend -> `npm start`<br>
+run app ->`ng serve --o`
